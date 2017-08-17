@@ -7,7 +7,7 @@
 import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 
-import BorderedImage from './bi';
+import BorderedImage from 'react-native-bordered-image';
 
 export default class demo extends Component {
     render() {

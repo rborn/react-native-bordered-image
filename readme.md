@@ -10,7 +10,7 @@ Just a wrapper to allow images to have various borderRadius for individual corne
 <img src="./screenshots/android.png" width="250">
 
 
-See [Demo](./demo) for examples
+See [the demo](./demo/src/index.js) for examples.
 
 **Unsupported styles**
 

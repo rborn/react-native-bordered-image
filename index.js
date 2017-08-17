@@ -25,7 +25,22 @@ const deleteStyleKeys = [
     'borderStyle',
     'borderTopColor',
     'borderTopWidth',
-    'borderWidth'
+    'borderWidth',
+    'backgroundColor'
+];
+
+const deleteImageStyleKeys = [
+    'left',
+    'right',
+    'top',
+    'bottom',
+    'margin',
+    'marginBottom',
+    'marginHorizontal',
+    'marginLeft',
+    'marginRight',
+    'marginTop',
+    'marginVertical'
 ];
 
 export default class BorderedImage extends Component {
@@ -48,6 +63,12 @@ export default class BorderedImage extends Component {
             delete wrapperStyle[key];
             delete imageStyle[key];
         });
+
+        deleteImageStyleKeys.forEach(key => {
+            delete imageStyle[key];
+        });
+
+        wrapperStyle.opacity = style.opacity;
 
         if (Platform.OS === 'ios') {
             delete imageStyle.borderRadius;

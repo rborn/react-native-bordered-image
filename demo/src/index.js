@@ -7,14 +7,26 @@
 import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 
-import BorderedImage from '../..';
+import BorderedImage from './bi';
 
 export default class demo extends Component {
     render() {
         return (
             <View style={styles.container}>
                 <BorderedImage
-                    style={styles.image}
+                    style={[styles.image, styles.one]}
+                    source={{ uri: 'https://facebook.github.io/react/img/logo_og.png' }}
+                />
+                <BorderedImage
+                    style={[styles.image, styles.two]}
+                    source={{ uri: 'https://facebook.github.io/react/img/logo_og.png' }}
+                />
+                <BorderedImage
+                    style={[styles.image, styles.three]}
+                    source={{ uri: 'https://facebook.github.io/react/img/logo_og.png' }}
+                />
+                <BorderedImage
+                    style={[styles.image, styles.four]}
                     source={{ uri: 'https://facebook.github.io/react/img/logo_og.png' }}
                 />
             </View>
@@ -25,19 +37,37 @@ export default class demo extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#000'
+        justifyContent: 'center',
+        backgroundColor: '#333'
     },
     image: {
-        width: 200,
-        height: 100,
-        borderBottomLeftRadius: 10,
-        borderTopRightRadius: 50,
-        borderRadius: 20,
+        margin: 20,
+        width: 60,
+        height: 60,
         borderWidth: 1,
         borderColor: 'white',
         borderStyle: 'solid'
+    },
+    one: {
+        borderRadius: 30,
+        borderWidth: 3
+    },
+    two: {
+        borderBottomLeftRadius: 0,
+        borderRadius: 20
+    },
+    three: {
+        borderBottomLeftRadius: 10,
+        borderTopRightRadius: 50,
+        borderRadius: 20,
+        borderStyle: 'dotted'
+    },
+    four: {
+        borderRadius: 0,
+        borderTopLeftRadius: 10,
+        borderBottomRightRadius: 30,
+        borderStyle: 'dashed'
     }
 });
 

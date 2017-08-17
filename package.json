@@ -1,0 +1,27 @@
+{
+  "name": "react-native-bordered-image",
+  "version": "0.1.0",
+  "description": "React native unified bordered image ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Tamas @dan_tamas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rborn/react-native-bordered-image.git"
+  },
+  "keywords": [
+    "react-native",
+    "image",
+    "bordered",
+    "image",
+    "image",
+    "border"
+  ],
+  "bugs": {
+    "url": "https://github.com/rborn/react-native-bordered-image/issues"
+  },
+  "homepage": "https://github.com/rborn/react-native-bordered-image#readme"
+}

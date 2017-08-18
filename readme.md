@@ -12,6 +12,10 @@ Just a wrapper to allow images to have various borderRadius for individual corne
 
 See [the demo](./demo/src/index.js) for examples.
 
+Or preview it in [Expo](https://expo.io/@rborn/react-native-bordered-image-demo)
+
+<img src="./screenshots/expo.png" width="160">
+
 **Unsupported styles**
 
 ```

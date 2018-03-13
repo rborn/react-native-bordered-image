@@ -31,6 +31,3 @@ Or preview it in [Expo](https://expo.io/@rborn/react-native-bordered-image-demo)
 ```
 
 
-
-
-
